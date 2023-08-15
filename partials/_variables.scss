@@ -1,0 +1,27 @@
+$theme: dark;
+
+// ***COLORS***
+
+$body-bg-light: #d5dce4;
+$body-bg-dark: #45484a;
+$header-bg: #793c5a;
+$footer-bg: #793c5a;
+$text-head-foot: $body-bg-light;
+$text-color: #45484a;
+
+//***TYPOGRAPHY***
+
+
+
+//***SIZES***
+
+$header-height: 5em;
+$footer-height: 5em;
+
+@if $theme == dark {
+    $body-bg-light: #45484a;
+    $header-bg: lighten(#793c5a, 10%);
+    $footer-bg: lighten(#793c5a, 10%);
+    $text-color: #d5dce4;
+    $text-head-foot: #d5dce4;
+}

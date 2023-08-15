@@ -1,0 +1,61 @@
+@import "partials/reset";
+@import "partials/variables";
+@import "partials/mixins";
+
+
+
+body{
+    background-color: $body-bg-light;
+    @include container;
+    @include button;
+}
+
+header{
+    height: $header-height;
+    background-color: $header-bg;
+    color: $text-color;
+    text-align: center;
+
+    h1{
+        line-height: $header-height/2;
+
+        
+    }
+}
+
+footer{
+    height: $footer-height;
+    background-color: $footer-bg;
+    color: $text-head-foot;
+    text-align: center;
+
+    p{
+        line-height: $header-height;
+    }
+}
+
+.about-us{
+
+    h2, p{
+        color: $text-color;
+    }
+}
+
+.theme{
+    @include theme-box;
+    display: inline-block;
+
+    img{
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+        @include border-radius;
+    }
+
+    a{
+        display: block;
+        margin: 1em auto;
+        text-align: center;
+    }
+}
+

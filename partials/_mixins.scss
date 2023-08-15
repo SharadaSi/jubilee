@@ -1,0 +1,30 @@
+@import "functions";
+
+
+@mixin container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@mixin theme-box {
+    width: (col-width()*6);
+}
+
+@mixin border-radius($radius: 15px){
+    border-radius: $radius;
+}
+
+@mixin button {
+    a{
+        width: 25%;
+        text-decoration: none;
+        padding: .5rem 1rem;
+        background-color: $header-bg;
+        color: $text-color;
+        @include border-radius(10px);
+
+        &:hover{
+            background-color: lighten($header-bg, 20%);
+        }
+    }
+}
